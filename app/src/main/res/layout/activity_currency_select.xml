@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/view_currency_close"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/rippel_primary"
+                android:onClick="onCloseClick"
+                android:padding="18.0dip"
+                android:src="@drawable/ic_close_white_24dp"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/select_currency"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/f16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="72.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_currency"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/txt_currency_not_found"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/divider"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        android:gravity="center"
+                        android:paddingLeft="12.0dip"
+                        android:paddingTop="26.0dip"
+                        android:paddingRight="12.0dip"
+                        android:paddingBottom="26.0dip"
+                        android:text="@string/i_havenot_currency"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/txt_currency_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="18.0dip"
+                android:background="@drawable/btn_primary_half_round"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
+                android:drawablePadding="5.5dip"
+                android:gravity="center"
+                android:paddingLeft="@dimen/btn_large_padding"
+                android:paddingRight="@dimen/btn_large_padding"
+                android:text="@string/next"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_currency_add_new_currency"
+        layout="@layout/add_new_currency_view"
+        android:visibility="invisible" />
+</RelativeLayout>

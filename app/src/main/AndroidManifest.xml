@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Example.cashcounter">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appiconround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ads_id" />
+
+
+        <activity
+            android:name="com.Example.cashcounter.ActivitySplashScreen"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Example.cashcounter.Activity.ActivityCurrencySelect"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.Example.cashcounter.Activity.ActivityScreenHome"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.Example.cashcounter.Activity.ActivityScreenAddCurrency"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.Example.cashcounter.Activity.ActivityProfileSetting"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name="com.Example.cashcounter.Activity.ActivityCurrencyListChange"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.Example.cashcounter.Activity.ActivityStartUp"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Transparent" />
+
+
+
+    </application>
+
+</manifest>

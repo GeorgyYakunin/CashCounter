@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bnav_in"
+        android:icon="@drawable/ic_bottom_nav_cashin"
+        android:title="In" />
+    <item
+        android:id="@+id/bnav_out"
+        android:icon="@drawable/ic_bottom_nav_cashout"
+        android:title="Paid" />
+    <item
+        android:id="@+id/bnav_sales"
+        android:icon="@drawable/ic_bottom_nav_sales"
+        android:title="Sales" />
+    <item
+        android:id="@+id/bnav_exchange"
+        android:icon="@drawable/ic_bottom_nav_exchange"
+        android:title="Exchange" />
+</menu>

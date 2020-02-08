@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="amount_length">12</integer>
+
+    <integer name="currency_amount_length">6</integer>
+
+    <integer name="mobile_length">15</integer>
+    <integer name="purpose_text_length">20</integer>
+    <integer name="qty_length">6</integer>
+
+
+    <integer name="zipcode_length">12</integer>
+</resources>

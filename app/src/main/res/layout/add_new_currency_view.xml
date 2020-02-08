@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/view_currency_add_new_scrim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:background="@drawable/shadow_down_to_top" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#edf4f4"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_currency_add_new_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/company_name"
+
+                    android:inputType="textCapWords"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_currency_add_new_symbol"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/symbol"
+                    android:inputType="text"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_currency_add_new_iso_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/iso_code"
+                    android:inputType="textCapCharacters"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/view_currency_add_new_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:onClick="findSymbolOnWeb"
+                android:text="@string/find_currency_detail"
+                android:textColor="@color/link"
+                android:textSize="@dimen/f12" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip">
+
+                <TextView
+                    android:id="@+id/view_currency_add_new_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_accent_half_round"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/btn_large_padding"
+                    android:paddingRight="@dimen/btn_large_padding"
+                    android:text="@string/close"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/view_currency_add_new_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_primary_half_round"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
+                    android:drawablePadding="5.0dip"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/btn_large_padding"
+                    android:paddingRight="@dimen/btn_large_padding"
+                    android:text="@string/next"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

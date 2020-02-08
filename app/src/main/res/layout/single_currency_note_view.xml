@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="16.0dip">
+
+    <LinearLayout
+        android:id="@+id/view_add_currency_single_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_currency_note"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="32.0dip"
+        android:paddingTop="16.0dip"
+        android:paddingRight="32.0dip"
+        android:paddingBottom="16.0dip">
+
+        <TextView
+            android:id="@+id/txt_view_currency_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/f35"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_view_currency_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/zero_num"
+            android:inputType="number"
+            android:maxLength="@integer/currency_amount_length"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/text4"
+            android:textSize="@dimen/f35" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/view_single_currency_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view_add_currency_single_main"
+        android:layout_alignBottom="@+id/view_add_currency_single_main"
+        android:clickable="true"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_remove_minus_red"
+        app:layout_anchor="@+id/view_add_currency_single_main"
+        app:layout_anchorGravity="center|right" />
+</androidx.cardview.widget.CardView>

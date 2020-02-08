@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginTop="0.0dip"
+        android:layout_marginRight="0.0dip"
+        android:layout_marginBottom="0.0dip"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/acc_name_wrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="22.0dip"
+                android:layout_marginRight="16.0dip"
+                android:textColorHint="@color/text1">
+
+                <EditText
+                    android:id="@+id/editaccname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/please_account_name"
+                    android:imeActionId="124"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_wrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acc_name_wrapper"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:textColorHint="@color/text1">
+
+                <EditText
+                    android:id="@+id/editcontact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/please_company_name"
+                    android:imeActionId="124"
+                    android:imeOptions="actionSend"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay4"
+                android:layout_width="fill_parent"
+                android:layout_height="62.0dip"
+                android:layout_below="@+id/contact_wrapper"
+                android:layout_marginTop="22.0dip"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnsave"
+                    android:layout_width="94.0dip"
+                    android:layout_height="42.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12.0dip"
+
+                    android:layout_marginBottom="12.0dip"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/btncancel"
+                    android:layout_width="94.0dip"
+                    android:layout_height="42.0dip"
+                    android:layout_marginTop="12.0dip"
+
+                    android:layout_marginBottom="12.0dip"
+                    android:layout_toLeftOf="@+id/btnsave"
+                    android:text="@string/cancel_big" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

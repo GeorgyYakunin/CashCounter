@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Cash Counter</string>
+    <string name="ads_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ads_bnr" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_inter" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="rupee" translatable="false">₹</string>
+    <string name="dash" translatable="false">-</string>
+    <string name="dollar_char" translatable="false">$</string>
+    <string name="app_id_text_example" translatable="false">36872221</string>
+    <string name="selected_currency_example" translatable="false">1, 2, 5, 10, 50, 100, 500, 2000</string>
+    <string name="price_example" translatable="false">$567</string>
+    <string name="x_char" translatable="false"> X </string>
+    <string name="zero_num" translatable="false">0</string>
+    <string name="dot" translatable="false">●</string>
+    <string name="twelve" translatable="false">12</string>
+    <string name="hungred_dollar" translatable="false">$100</string>
+    <string name="five_hungred_dollars" translatable="false">$500</string>
+    <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="vertical_slash_char" translatable="false">|</string>
+
+
+
+    <string name="moreapp">Account+Name</string>
+    <string name="find_currency_detail"><u>Find currency details on web?</u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="add_currency">Add Currency</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="username">Username</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="country_code">Country code</string>
+    <string name="zip_code">Zip code</string>
+    <string name="mobile_no">Mobile no</string>
+    <string name="email">Email</string>
+    <string name="required_details">Above mentioned all details are required</string>
+    <string name="pay_cost">Pay $567</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="i_havenot_currency">I have not found my Currency</string>
+    <string name="next">Next</string>
+    <string name="holder_name">Vivek Aghera</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="company_name">Company Name</string>
+    <string name="account_info">Account Info</string>
+    <string name="app_id_text">App Id</string>
+    <string name="return_amount">Return Amount</string>
+    <string name="subscribed_package">Subscribed Package</string>
+    <string name="one_year">1 Year</string>
+    <string name="duration">Duration</string>
+    <string name="expire_date">Expire Date</string>
+    <string name="date_example">22 Jun 2018</string>
+    <string name="package_has_been_expired">Package has been expired</string>
+    <string name="general">General</string>
+    <string name="currency">Currency</string>
+    <string name="indian_rupee_inr">Indian Rupee - $ - INR</string>
+    <string name="selected_currency">Selected Currency</string>
+    <string name="flush_data">Flush Data</string>
+    <string name="log_in">LOG IN</string>
+    <string name="purpose">Purpose</string>
+    <string name="date">Date</string>
+    <string name="note">Note</string>
+    <string name="name">Name</string>
+    <string name="in_34">In 34</string>
+    <string name="out_34">Out 34</string>
+    <string name="cash_exchange">Cash Exchange</string>
+    <string name="in_qty">In Qty</string>
+
+    <string name="out_qty">Out Qty</string>
+    <string name="type">Type</string>
+    <string name="bilno">BilNo</string>
+    <string name="paid">Paid</string>
+    <string name="return_txt">Return</string>
+    <string name="counter_status">Counter Status</string>
+    <string name="add_new_purpose">Add New Purpose</string>
+    <string name="select_purpose">Select Purpose</string>
+    <string name="enter_name">Enter name</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="add_qty">Add Qty</string>
+    <string name="enter_qty_manually">Enter Qty Manually</string>
+    <string name="vyvek">Vivek</string>
+    <string name="home">Home</string>
+    <string name="report">Report</string>
+    <string name="manage_purpose">Manage Purpose</string>
+    <string name="subscibe">Subscibe</string>
+    <string name="share_this_app">Share This App</string>
+    <string name="rate_this_app">Rate This App</string>
+    <string name="more_app">More App (Ads)</string>
+    <string name="please_account_name">Please account name.</string>
+    <string name="please_company_name">Please Company name.</string>
+    <string name="save">SAVE</string>
+    <string name="cancel_big">CANCEL</string>
+    <string name="qty">Qty</string>
+    <string name="amount">Amount</string>
+    <string name="submit">Submit</string>
+    <string name="available_amount">Available Amount</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="auto_arrange">Auto arrange</string>
+    <string name="total_qty">Total Qty</string>
+    <string name="total_available_amount">Total Available amount</string>
+    <string name="available_qty">Available Qty</string>
+    <string name="cash_in">Cash In</string>
+    <string name="amount_dash">Amount -</string>
+    <string name="cash_out">Cash Out</string>
+    <string name="transation_type">Transation Type</string>
+    <string name="no_transaction_available">No Transaction Available</string>
+    <string name="bill_number">Bill Number</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="plan">Plan</string>
+    <string name="duration_6_months">Duration 6 Months</string>
+    <string name="hello">Hello</string>
+    <string name="symbol">Symbol</string>
+    <string name="iso_code">ISO Code</string>
+    <string name="close">Close</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="company_shop_name">Company / Shop name</string>
+</resources>

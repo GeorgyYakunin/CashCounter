@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_add_qty_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18.0dip"
+        android:layout_marginTop="18.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:text="@string/add_qty"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/f20"
+        android:textStyle="bold" />
+
+    <NumberPicker
+        android:id="@+id/numberpicker_qty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_add_qty"
+        style="@style/TextLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginTop="6.0dip"
+        >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_qty_manually"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/f14" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="12.0dip">
+
+        <Button
+            android:id="@+id/btn_add_qty_cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_add_qty_add"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

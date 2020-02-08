@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_setting_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:onClick="onCloseClick"
+            android:padding="18.0dip"
+            android:src="@drawable/ic_close_white_24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="12.0dip"
+            android:paddingBottom="12.0dip">
+
+            <ImageView
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/txt_setting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:text="@string/holder_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/f14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="0.0dip"
+                app:cardElevation="1.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18.0dip">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/personal_details"
+                            android:textColor="@color/text2"
+                            android:textSize="@dimen/f12"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/edtinfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22.0dip"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_edit_black_36dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip">
+
+                        <TextView
+                            android:id="@+id/company_head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.0dip"
+                            android:text="@string/company_name"
+                            android:textColor="@color/text3"
+                            android:textSize="@dimen/f10" />
+
+                        <TextView
+                            android:id="@+id/txt_setting_company_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="12.0dip"
+                            android:text="@string/company_name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/f16" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18.0dip"
+                            android:text="@string/mobile_no"
+                            android:textColor="@color/text3"
+                            android:textSize="@dimen/f10" />
+
+                        <TextView
+                            android:id="@+id/txt_setting_mobile_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12.0dip"
+                            android:text="@string/mobile_no"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/f16" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_setting_account_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="0.0dip"
+                app:cardElevation="1.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_info"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/f12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:text="@string/app_id_text"
+                        android:textColor="@color/text3"
+                        android:textSize="@dimen/f10" />
+
+                    <TextView
+                        android:id="@+id/txt_setting_appid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_id_text_example"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/f16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:text="@string/subscribed_package"
+                        android:textColor="@color/text3"
+                        android:textSize="@dimen/f10"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_setting_package"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/one_year"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/f16"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:text="@string/duration"
+                        android:textColor="@color/text3"
+                        android:textSize="@dimen/f10"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_setting_duraition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/duration"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/f16"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:text="@string/expire_date"
+                        android:textColor="@color/text3"
+                        android:textSize="@dimen/f10"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_setting_expr_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date_example"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/f16" />
+
+                        <TextView
+                            android:id="@+id/txt_setting_expr_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12.0dip"
+                            android:text="@string/package_has_been_expired"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="@dimen/f16"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:layout_marginBottom="12.0dip"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="0.0dip"
+                app:cardElevation="1.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/f12"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:background="?selectableItemBackground"
+                        android:gravity="center"
+                        android:onClick="onChangeCurrencyClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/currency"
+                                android:textColor="@color/text3"
+                                android:textSize="@dimen/f10" />
+
+                            <TextView
+                                android:id="@+id/txt_setting_currency_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/indian_rupee_inr"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/f16" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+                            android:tint="@android:color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:background="?selectableItemBackground"
+                        android:gravity="center"
+                        android:onClick="onChangeCurrencyListClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/selected_currency"
+                                android:textColor="@color/text3"
+                                android:textSize="@dimen/f10" />
+
+                            <TextView
+                                android:id="@+id/txt_setting_selected_currency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/selected_currency_example"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/f16" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+                            android:tint="@android:color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:layout_marginBottom="12.0dip"
+                android:foreground="?selectableItemBackground"
+                android:onClick="onFlushData"
+                app:cardBackgroundColor="#ffffe1e1"
+                app:cardCornerRadius="0.0dip"
+                app:cardElevation="1.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="18.0dip"
+                    android:text="@string/flush_data"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="@dimen/f16"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

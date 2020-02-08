@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_cashin_report_a_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="12.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cashin_report_a_purpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="@integer/purpose_text_length"
+                android:text="@string/purpose"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:text="@string/dot"
+                android:textSize="@dimen/f10" />
+
+            <TextView
+                android:id="@+id/txt_cashin_report_a_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/date"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/txt_cashin_report_a_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_example"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/f16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_cashin_report_a_note"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note"
+            android:textColor="@color/text3"
+            android:textSize="@dimen/f12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/divider" />
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/nav_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:onClick="onNavigationItemClick"
+        android:orientation="horizontal"
+        android:paddingLeft="18.0dip"
+        android:paddingTop="18.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="18.0dip"
+        android:weightSum="2.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.3"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:src="@drawable/appiconround" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_nav_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vyvek"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/f16" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_nav_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/company_name"
+                        android:textColor="@color/text3"
+                        android:textSize="@dimen/f12" />
+
+                    <TextView
+                        android:id="@+id/txt_nav_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/currency"
+                        android:textColor="@color/text3"
+                        android:textSize="@dimen/f12" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8"
+            android:gravity="center|right">
+
+            <ImageView
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:src="@drawable/ic_right_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="true"
+            android:orientation="vertical"
+            android:paddingTop="12.0dip">
+
+            <TextView
+                android:id="@+id/nav_home"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:onClick="onNavigationItemClick"
+                android:padding="18.0dip"
+                android:text="@string/home"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/nav_report"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:onClick="onNavigationItemClick"
+                android:padding="18.0dip"
+                android:text="@string/report"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/nav_managepurpose"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:onClick="onNavigationItemClick"
+                android:padding="18.0dip"
+                android:text="@string/manage_purpose"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/nav_subscription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:onClick="onNavigationItemClick"
+                android:padding="16.0dip"
+                android:text="@string/subscibe"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/f14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/nav_shareapp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:onClick="onNavigationItemClick"
+                android:padding="18.0dip"
+                android:text="@string/share_this_app"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/nav_rateapp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:onClick="onNavigationItemClick"
+                android:padding="18.0dip"
+                android:text="@string/rate_this_app"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/nav_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:onClick="onNavigationItemClick"
+                android:padding="18.0dip"
+                android:text="@string/more_app"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/f14" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
